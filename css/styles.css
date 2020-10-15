@@ -1,0 +1,137 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: black;
+}
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  padding: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+nav > a,
+li,
+li > a {
+  list-style: none;
+  margin: 10px;
+  text-decoration: none;
+  color: gray;
+}
+
+nav > li:hover,
+nav > a:hover,
+li > a:hover {
+  color: black;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+ul {
+  display: flex;
+}
+span {
+  margin-right: 5px;
+}
+.content {
+  background: url("../images/intro-bg_1.jpg") no-repeat center center fixed;
+  padding: 80px;
+  margin: 0 auto;
+}
+.description {
+  background: black;
+  opacity: 0.7;
+  color: white;
+  height: 300px;
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 100px;
+  text-align: center;
+  padding: 10px;
+}
+.description > h1 {
+  text-align: center;
+  opacity: 1;
+}
+.description > button {
+  cursor: pointer;
+  margin-top: 20px;
+  background-color: red;
+  border: none;
+  padding: 10px;
+  border-radius: 99px;
+  color: white;
+}
+.description > button:hover {
+  transition: all 0.1s ease-in;
+  background-color: white;
+  color: black;
+}
+.products {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+}
+@media only screen and (max-width: 660px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+  .description {
+    margin: 0 auto;
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+.item {
+  border: 1px lightgray solid;
+  text-align: center;
+  margin: 5px;
+  height: 200px;
+}
+.item__img {
+  width: 220px;
+  object-fit: contain;
+}
+.item__body {
+  padding: 2px 16px;
+  text-align: center;
+}
+.item__title {
+  margin-top: 5px;
+  text-align: center;
+}
+.item__description {
+  width: 190px;
+  font-size: 10px;
+  margin: 4px auto;
+}
+.item > a {
+  background-color: black;
+  text-decoration: none;
+  color: gray;
+}
+.item > a:hover {
+  color: white;
+}
+.item__img {
+  width: 220px;
+  object-fit: contain;
+}
+footer {
+  background-color: white;
+  color: black;
+  padding: 10px;
+  text-align: center;
+}
